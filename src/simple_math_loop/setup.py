@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'math_input_phase = simple_math_loop.input_phase:main',
-            'math_first_phase = simple_math_loop.first_phase:main'
+            'math_first_phase = simple_math_loop.first_phase:main',
+            'math_second_phase = simple_math_loop.second_phase:main'
         ],
     },
 )

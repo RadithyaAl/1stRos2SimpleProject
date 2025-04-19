@@ -24,15 +24,14 @@ class MathPhase1(Node):
 
     def phase1_callback(self, math_phase1):
         # Create a new message
-        phase1_input = Int32()
-        phase1_input.data = math_phase1.data + 2
-        phase1_value = phase1_input.data
+        phase1_value = Int32()
+        phase1_value.data = math_phase1.data + 2
 
         # Publish the modified value
-        self.phase1_publisher.publish(phase1_input)
+        self.phase1_publisher.publish(phase1_value)
 
         # Log the result
-        self.get_logger().info(f"Phase1 Received: {math_phase1.data} | Published: {phase1_value}")
+        self.get_logger().info(f"Phase1 Received: {math_phase1.data} | Published: {phase1_value.data}")
 
 
 def main(args=None):
