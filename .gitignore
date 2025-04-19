@@ -1,0 +1,39 @@
+# ROS 2 build outputs
+build/
+install/
+log/
+
+# colcon metadata
+.colcon/
+
+# Python stuff
+*.pyc
+__pycache__/
+*.pyo
+
+# Local virtual environments
+venv/
+.env/
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.swp
+*~
+.#*
+
+# Qt / CMake tools
+CMakeLists.txt.user
+qtcreator-*
+*.user
+
+# Dynamic reconfigure (if used)
+*.cfgc
+cfg/cpp/
+cfg/*.py
+
+# Misc
+*.pcd
+*.dox
+*.wikidoc
+CATKIN_IGNORE  # harmless if left here, but not used in ROS 2
